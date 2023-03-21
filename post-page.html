@@ -61,14 +61,14 @@
                 <table class="table table-bordered text-center">
                     <thead>
                         <tr class="bg-light-gray">
-                            <th class="text-uppercase">Time
+                            <th class="text-uppercase">Hora
                             </th>
-                            <th class="text-uppercase">Monday</th>
-                            <th class="text-uppercase">Tuesday</th>
-                            <th class="text-uppercase">Wednesday</th>
-                            <th class="text-uppercase">Thursday</th>
-                            <th class="text-uppercase">Friday</th>
-                            <th class="text-uppercase">Saturday</th>
+                            <th class="text-uppercase">Lunes</th>
+                            <th class="text-uppercase">Martes</th>
+                            <th class="text-uppercase">Miercoles</th>
+                            <th class="text-uppercase">Jueves</th>
+                            <th class="text-uppercase">Viernes</th>
+                            <th class="text-uppercase">Sabado</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -324,6 +324,49 @@
                 </table>
             </div>
         </div>
+        <div class="testbox">
+            <form action="/">
+              <div class="banner">
+                <h1>Asignacion de Citas</h1>
+              </div>
+              <p>Informacion</p>
+              <div class="item">
+                <label for="name">Nombre<span>*</span></label>
+                <input id="name" type="text" name="name" required/>
+              </div>
+              <div class="item">
+                <label for="email">Email<span>*</span></label>
+                <input id="email" type="email" name="email" required/>
+              </div>
+              <div class="item">
+                <label for="phone">Telefono<span>*</span></label>
+                <input id="phone" type="number" name="phone" required/>
+              </div>
+              <div class="item">
+                <label for="bdate">Dia de Cita<span>*</span></label>
+                <input id="bdate" type="date" name="bdate" required/>
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+               <div class="item">
+                <p>Hora</p>
+                <select>
+                  <option selected value="" disabled selected></option>
+                  <option value="nueve" >09:00AM</option>
+                  <option value="diez">10:00AM</option>
+                  <option value="once">11:00AM</option>
+                  <option value="doce">12:00AM </option>
+                  <option value="catorce">02:00PM </option>
+                  <option value="quince">03:00PM </option>
+                  <option value="dieciseis">04:00PM</option>
+                  <option value="diecisiete ">05:00PM </option>
+                </select>
+              </div>
+            
+              <div class="btn-block">
+                <button type="submit" href="/">ENVIAR</button>
+              </div>
+            </form>
+          </div>
           
    
     </section>

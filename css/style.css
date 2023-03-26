@@ -88,7 +88,48 @@ header.shadow .logo{
     background: hsl(24, 98%, 58%);
     transition: 0.3s;
 }
+.search-container 
+    {
+        float: right;  
+        padding-top: 1px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 1%;
+        border-radius: 20px;
+        
+    }
+      
+ input[type=text]
+    {
+        all: unset;
+        padding: 5px;
+        margin-top: 1px;
+        font-size: 15px;
+        border: none;
+        border-radius: 25px;
+        color: #000000;
+      
+        
+     }
+      
+ .search-container button 
+    {
+        float: right;
+        margin-top: 5px;
+        margin-right: 10px;
+        background: rgba(221, 221, 221, 0);
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50% 50% / 50% 50%;
+        
+      }
+      
+.search-container button:hover
+     {
+        background: var(--second-color);
 
+      }
+  
  /*home*/
  .home{
     width: 100%;

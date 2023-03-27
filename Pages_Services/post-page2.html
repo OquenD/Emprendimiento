@@ -57,9 +57,10 @@
     <!--Posts-->
 
     <section class="post-content post-container">
-        <h2 class="sub-heading">Clases de ....</h2>
+        <h2 class="sub-heading">Citas de ....</h2>
         <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quam autem magnam repellendus quos saepe quod, eum obcaecati odio veritatis explicabo illum reprehenderit numquam amet, distinctio totam tempora! Perferendis, debitis!</p>
    
+        <!--Schedule-->
         <div class="container">
             <div class="timetable-img text-center">
                 <img src="../img/content/timetable.png" alt="">
@@ -353,55 +354,77 @@
 
                     </tbody>
                 </table>
-            </div>
-            <div class="testbox">
-                <form action="/">
-                  <div class="banner">
-                    <h1>Asignacion de Citas</h1>
-                  </div>
-                  <p>Informacion</p>
-                  <div class="item">
-                    <label for="name">Nombre<span>*</span></label>
-                    <input id="name" type="text" name="name" required/>
-                  </div>
-                  <div class="item">
-                    <label for="email">Email<span>*</span></label>
-                    <input id="email" type="email" name="email" required/>
-                  </div>
-                  <div class="item">
-                    <label for="phone">Telefono<span>*</span></label>
-                    <input id="phone" type="number" name="phone" required/>
-                  </div>
-                  <div class="item">
-                    <label for="bdate">Dia de Cita<span>*</span></label>
+            </div>  
+        </div>
+
+        <!--Solicitud de Cita-->
+        <div class="info">
+            <form action="/">
+                <!--Cita-->
+                <div class="appointment">
+                <h1>Agendar Cita</h1>
+                
+                    <p>Nombre</p> <input class="fname" type="text" name="name" placeholder="Nombre Completo">
+                    <p>Correo</p> <input type="text" name="name" placeholder="Email">
+                    <p>Telefono</p> <input type="text" name="name" placeholder="Telefono">
+                
+
+                <p>Dia de Cita</p>
                     <input id="bdate" type="date" name="bdate" required/>
                     <i class="fas fa-calendar-alt"></i>
-                  </div>
-                   <div class="item">
-                    <p>Hora</p>
+                <p>Hora</p>
                     <select>
-                      <option selected value="" disabled selected></option>
-                      <option value="nueve" >09:00AM</option>
-                      <option value="diez">10:00AM</option>
-                      <option value="once">11:00AM</option>
-                      <option value="doce">12:00AM </option>
-                      <option value="catorce">02:00PM </option>
-                      <option value="quince">03:00PM </option>
-                      <option value="dieciseis">04:00PM</option>
-                      <option value="diecisiete ">05:00PM </option>
+                    <option selected value="" disabled selected></option>
+                    <option value="nueve" >09:00AM</option>
+                    <option value="diez">10:00AM</option>
+                    <option value="once">11:00AM</option>
+                    <option value="doce">12:00AM </option>
+                    <option value="catorce">02:00PM </option>
+                    <option value="quince">03:00PM </option>
+                    <option value="dieciseis">04:00PM</option>
+                    <option value="diecisiete ">05:00PM </option>
                     </select>
-                  </div>
-                
-                  <div class="btn-block">
-                    <button type="submit" href="/">ENVIAR</button>
-                  </div>
-                </form>
-              </div>
-              
+                <p>Comentario</p>
+                    <div>
+                        <textarea rows="3"></textarea>
+                    </div>
+                </div>
+                <!--Payment-->
+                <div class="payment">
+                    <div class="pay-info">
+                        <h2>Pago</h2>
+                            <ul class="form-list">
+                                <li class="form-list-row">
+                                    <div class="user">
+                                        <label for="#">Nombre </label><br>
+                                        <i class='bx bxs-user'></i><input type="text" required>
+                                    </div>
+                                </li>
+                                <li class="form-list-row">
+                                    <div class="number">
+                                        <label for="#">Numero de Tarjeta</label><br>
+                                        <i class='bx bx-credit-card' ></i><input type="text" required>
+                                    </div>
+                                </li>
+                                <li class="form-list-row clearfix">
+                                    <div class="date">
+                                        <label for="#">Fecha de Vencimiento</label><br>
+                                        <input class="month" type="text" required placeholder="MM">
+                                        <input class="year" type="text" required placeholder="YY">
+                                    </div>
+                                    <div class="cvc">
+                                        <label for="#">CVC</label><i class="fas fa-question-circle"></i><br>
+                                        <input type="text" required placeholder="123">
+                                    </div>
+                                </li>
+                                <li class="form-list-row">
+                                </li>
+                            </ul>
+                            <button>Agendar Cita</button>
+                    </div>
+                </div>
+            </form>
         </div>
-          
-        <!--Payment-->
-
     </section>
    <!--footer-->
    <div class="footer container">

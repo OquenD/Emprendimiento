@@ -98,7 +98,7 @@ header.shadow .logo{
         
     }
       
-.search-container .search-form input[type=text]
+.search-container  input[type=text]
     {
         all: unset;
         padding: 5px;
